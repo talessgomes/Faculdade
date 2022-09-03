@@ -1,0 +1,212 @@
+/* Colocando margin 0 para que o portfólio ocupe todos os cantos da tela*/
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*CABEÇALHO*/
+/*Parte de estilização do cabeçalho*/
+header {
+    width: 100%;
+        height: 75px;
+        background-color: #A8090C;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 0 10px;
+    border-bottom: 2px solid black;
+}
+/*Aqui vai ser onde vai ter uma lista com os botões para fazer as rotas*/
+nav {
+    width: 50%;
+      max-width: 300px;
+      height: 50px;
+  }
+
+nav > ul {
+    display: flex;
+      justify-content: space-evenly;
+    flex-wrap: wrap;
+      align-items: center;
+      padding-inline-start: 0;
+      margin-block: 0;
+      height: 100%;
+  }
+
+/*Removendo efeitos que tem na lig da lista e a tag do link*/
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+#topmenu li {
+    color: white;
+    text-decoration: none;
+    display: block; 
+    padding:15px;
+}
+#topmenu li:first-child {
+    margin-right: auto;
+}
+
+/*PÁGINA INICIAL*/
+
+/*Estilizando a parte home*/
+.home {
+    display: flex;
+    width: 100%;
+    height: 110vh;
+    background-color: #07f8ee;
+
+}
+
+/*Essa classe foi feita para ajudar na hora de centralizar*/
+.centralize {
+margin: auto;
+text-align: center;
+}
+
+/*SOMBRE MIM*/
+
+/*Descrições sobre mim*/
+#about-me {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #A8090C;
+}
+/*Colocando o posicionamento do texto sobre mim*/
+.text-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*ajustando somente a tag h1 que existe nesta class*/
+.text-about-me > h1 {
+    font-size: 40pt;
+    margin-top: -1vw;
+    font-weight: 300;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+}
+/*fazendo a mesma coisa com a tag p*/
+.text-about-me > p {
+    color: white;
+    margin-top: -1vw;
+    font-weight: 300;
+    text-shadow: 0px 0px 5px black;
+    font-size: 20pt;
+    width: 80%;
+}
+
+/*PROJETOS*/
+
+/*id dos projes, estou passando a cor de fundo 
+e a largura*/
+ .projects {
+     background-color: gold;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 2vh;
+     border-top: 1px solid black;
+ }
+
+ .list-project {
+    width: 750px;
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .list-project > img {
+    width:612px;
+    height: 416px;
+ }
+
+ .list-project > p {
+    width: 450px;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: -0.16px;
+ }
+
+ /*CONTATO*/
+
+ /*Organizando o container das informações de contato*/
+ .contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 16vh;
+    justify-content: space-between;
+    border-top: 2px solid black;
+ }
+
+ /*Ajustando o espaçamento da tag h1
+ */
+ .contact-container > h1 {
+    font-size: 30pt;
+    margin-bottom: 4vh;
+    text-transform: 0px 0px 0px 5px black;
+ }
+
+ .contact-container > p {
+    font-size: 20pt;
+    margin-top: -1vw;
+    text-transform: 0px 0px 0px 5px black;
+ }
+
+ .data-contact {
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .contact-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    height: 10vh;
+    width: 250px;
+    margin-top: 4vh;
+}
+
+
+ /*FOOTER*/
+
+ .footer {
+     display: flex;
+     background-color: white;
+     padding: 100px;
+ }
+
+.footer li {
+    text-decoration: none;
+    display:flex;
+    marker-mid: none;
+    margin-left: 80px;
+}
+
+img {
+    border: 0;
+}
